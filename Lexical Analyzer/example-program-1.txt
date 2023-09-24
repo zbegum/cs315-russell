@@ -1,0 +1,22 @@
+{
+	$bool x, y, z;
+	x :in: ;
+	y :in: ;
+	z :in: ;
+	
+	while (true)
+	{
+		if ( ((x && y) && z) )
+		{
+			:out: "Please enter at least one false value";
+			x :in: ;
+			y :in: ;
+			z :in: ;
+		}
+		else
+		{
+			break;
+		}
+	}	
+	:out: ((x => y) && !(x⇔z)) ;
+}
