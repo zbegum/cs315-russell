@@ -1,0 +1,13 @@
+Example - Array manipulation and display statements
+
+{
+–"this is a comment"–
+	A:myArray = 6{true,false, …true, false};
+	A:myArray[2] = (A:myArray[0] && A:myArray[1]);
+	A:myArray[5] = (A:myArray[3] || A:myArray[4]);
+	$bool x = (A:myArray[2] ⇔ A:myArray[5]);
+	:out: "Boolean at index 2 is" :: A:myArray[2];
+	:out: "Boolean at index 5 is" :: A:myArray[5];
+	:out: "The result is";
+	:out: x;
+}
